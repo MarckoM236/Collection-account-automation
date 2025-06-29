@@ -1,0 +1,11 @@
+# Ignorar configuración y dependencias
+.env
+.env.*
+/vendor/
+/node_modules/
+/.idea/
+/*.log
+
+# Ignorar archivos de sistema y editores
+.DS_Store
+Thumbs.db
