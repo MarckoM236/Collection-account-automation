@@ -1,6 +1,5 @@
 # Ignorar configuración y dependencias
 .env
-.env.*
 /vendor/
 /node_modules/
 /.idea/
