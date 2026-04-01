@@ -46,8 +46,9 @@ class DocumentoController {
             //sendEmail
             $subject = 'Cuenta de cobro ' . $num_cuenta . ' ' . $month .' de ' . date('Y');
             $fromName = $_ENV['SMTP_FROMNAME'] ?? '';
+            $company = $_ENV['COMPANY_NAME'] ?? '';
             $body = "<p>Cordial saludo,</p><br>".
-            "<p>Adjunto cuenta de cobro correspondiente a la ".$quincena." quincena del mes relacionado en el asunto, correspondiente a servicios prestados en la compañía Serinfor.</p><br>".
+            "<p>Adjunto cuenta de cobro correspondiente a la ".$quincena." quincena del mes relacionado en el asunto, correspondiente a servicios prestados en la compañía ".$company.".</p><br>".
             "<p>Muchas gracias</p><br>".
             "<p>Atentamente</p><br>".
             "<p>".$fromName."</p>".
