@@ -45,9 +45,9 @@ class DocumentoController {
         if(file_exists($pdfGenerate)){
             //sendEmail
             $subject = 'Cuenta de cobro ' . $num_cuenta . ' ' . $month .' de ' . date('Y');
-            $fromName = $_ENV['FROMNAME'] ?? '';
+            $fromName = $_ENV['SMTP_FROMNAME'] ?? '';
             $body = "<p>Cordial saludo,</p><br>".
-            "<p>Adjunto cuenta de cobro correspondiente a la ".$quincena." quincena del mes relacionado en el asunto, correspondiente a servicios prestados en la compañía.</p><br>".
+            "<p>Adjunto cuenta de cobro correspondiente a la ".$quincena." quincena del mes relacionado en el asunto, correspondiente a servicios prestados en la compañía Serinfor.</p><br>".
             "<p>Muchas gracias</p><br>".
             "<p>Atentamente</p><br>".
             "<p>".$fromName."</p>".

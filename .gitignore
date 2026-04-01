@@ -4,6 +4,9 @@
 /node_modules/
 /.idea/
 /*.log
+/storage/cuentas/
+/storage/plantillas/*
+!/storage/plantillas/plantilla_cuenta_cobro.example.docx
 
 # Ignorar archivos de sistema y editores
 .DS_Store
